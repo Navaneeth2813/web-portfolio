@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm a web developer passionate about creating amazing websites.</p>
+    </section>
+    
+    <section id="services">
+        <h2>Services</h2>
+        <div class="services">
+            <h3>Web designer</h3>
+            <p>"Web design is the art of creating visually appealing, user-friendly, and responsive websites that provide an engaging experience for visitors. It involves a combination of aesthetics and functionality, ensuring that a website is both attractive and easy to navigate. Good web design focuses on elements like layout, color schemes, typography, and interactive features to enhance user experience. </p>
+        </div>
+        <div class="services">
+            <h3>Web developer</h3>
+            <p>"Web development is the process of building and maintaining websites and web applications to ensure seamless functionality, performance, and user experience. It involves both front-end and back-end development, where the front-end focuses on the visual and interactive aspects using technologies like HTML, CSS, and JavaScript, while the back-end handles server-side logic, databases, and application functionality using languages like Node.js, Python, PHP, and frameworks like React, Angular, or Django.</p>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    
+    <script src="script.js"></script>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+        }
+        .project {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px;
+        }
+        form input, form textarea {
+            display: block;
+            margin: 10px auto;
+            padding: 8px;
+            width: 80%;
+        }
+        button {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+    
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Thank you for your message!");
+        });
+    </script>
+</body>
+</html>
